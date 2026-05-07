@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo{
+    width: 160px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.nav-logo .logo:hover{
+    width: 160px;
+    height: 120px;
+}
+
+.logo{
+    background-image: url(travel.png);
+    background-size: cover;
+    height: 110px;
+    transition-duration: 1s;
+}
+
+.nav-menu li{
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+}
+
+.nav-menu a:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nav-login{
+    margin-right: 25px;
+}
+
+.nav-login .login-btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.nav-login .login-btn:hover{
+    background-color: rgba(204, 226, 126, 0.932);
+    color: black;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.nav-search i{
+    color: black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-search i:hover{
+    color: blueviolet;
+    font-size: 18px;
+}
+
+.back-img{
+    height: 650px;
+    background-image: url(back-img.png);
+    background-size: 100% 650px;
+}
+
+.titles{
+    position: absolute;
+    top: 180px;
+    left: 75px;
+    color: white;
+}
+
+.titles p{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.titles h1{
+    font-size: 80px;
+}
+
+.titles h2{
+     font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 80px;
+  color: yellow;
+}
+
+.titles h5{
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.titles button{
+    margin-top: 40px;
+    padding: 15px 35px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition-duration: 1s;
+}
+
+.titles button:hover{
+    background-color: transparent;
+    color: yellowgreen;
+    border: 1px solid white;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title svg{
+    width: 40px;
+    height: 40px;
+}
+
+.title p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title a{
+    text-decoration: none;
+}
+
+.title a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.details{
+    padding: 20px 50px 20px 50px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.feature{
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    width: 23%;
+    height: 360px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3{
+    padding: 10px;
+    font-size: 22px;
+}
+
+.card p{
+    padding: 0 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.card a{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition-duration: 1s;
+}
+
+.card a:hover{
+    background-color: transparent;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.blogs{
+    padding: 20px;
+}
+
+.title2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* .title2 svg{
+    width: 40px;
+    height: 40px;
+} */
+
+.title2 p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title2 a{
+    text-decoration: none;
+}
+
+.title2 a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.box1{
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.box1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.box1 a{
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 10px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition-duration: 1s;
+}
+
+.box1 a:hover{
+    background-color: transparent;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.box1 h3{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.box1 .date{
+    padding: 0 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+.box1 p{
+    padding: 0 10px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.box1 h5{
+    display: inline-block;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: rgb(208, 164, 250, 0.5);
+    color: blueviolet;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.box1 h5:hover{
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.tools{
+    padding: 20px;
+}
+
+.tool{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.box2{
+    width: 30%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition-duration: 1s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box2:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.icon{
+    font-size: 30px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: blueviolet;
+    margin: 20px;
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: transparent;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.title3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.end{
+    width: 100%;
+    height: 110px;
+    background-image: url(back-img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.end1{
+    width: 100%;
+    height: 110px;
+    background-color: rgba(18, 87, 177, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1{
+    color: rgb(115, 209, 178);
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.h1 h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.h1 h5{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.inbox input{
+    padding: 15px;
+    width: 350px;
+    height: 24px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition-duration: 1s;
+    font-size: 18px;
+}
+
+.inbox input:hover{
+    border: 2px solid goldenrod;
+    width: 370px;
+    height: 30px;
+}
+
+.inbox button{
+    padding: 17px 28px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    background-color: goldenrod;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition-duration: 1s;
+    margin-right: 70px;
+}
+
+.inbox button:hover{
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+
+.footer{
+    background-color: rgb(13, 13, 66);
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 30px 50px 30px 50px;
+}
+
+.d1{
+    width: 250px;
+    height: 280px;
+}
+
+
+.l1{
+    width: 160px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.l1 .foot-img:hover{
+    width: 160px;
+    height: 120px;
+}
+
+.foot-img{
+    background-image: url(travel.png);
+    background-size: cover;
+    height: 110px;
+    transition-duration: 1s;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+
+.gal1{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gal1 .card1{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.gal1 .card1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px goldenrod;
+}
+
+.card1 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.gal2{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.gal2 .card2{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.gal2 .card2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px goldenrod;
+}
+
+.card2 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.l2 p{
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(206, 205, 205);
+}
+
+.l3{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.l3 i{
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: rgba(73, 41, 104, 0.87);
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.l3 i:hover{
+    background-color: transparent;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.d2 h3{
+    font-size: 25px;
+}
+
+.d2 li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.d2 a{
+    text-decoration: none;
+    color: rgb(206, 205, 205);
+    font-size: 20px;
+}
+
+.d2 a:hover{
+    text-decoration: underline rgb(206, 205, 205);
+}
+
+.d3 h3{
+    font-size: 25px;
+}
+
+.d3 li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.d3 a{
+    text-decoration: none;
+    color: rgb(206, 205, 205);
+    font-size: 20px;
+}
+
+.d3 a:hover{
+    text-decoration: underline rgb(206, 205, 205);
+}
+
+.d4 h3{
+    font-size: 25px;
+}
+
+.down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.part2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.part2 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.part2 a:hover{
+    text-decoration: underline white;
+}
