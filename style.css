@@ -62,6 +62,12 @@
     padding: 5px 10px;
 }
 
+#theme-toggle{
+    margin: 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .nav-login{
     margin-right: 25px;
 }
@@ -157,11 +163,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.title svg{
-    width: 40px;
-    height: 40px;
 }
 
 .title p{
@@ -260,11 +261,6 @@
     align-items: center;
     margin-bottom: 20px;
 }
-
-/* .title2 svg{
-    width: 40px;
-    height: 40px;
-} */
 
 .title2 p{
     display: flex;
@@ -673,4 +669,52 @@
 
 .part2 a:hover{
     text-decoration: underline white;
+}
+
+:root {
+    /* Light Mode (Your current colors) */
+    --bg-main: #ffffff;
+    --bg-secondary: #f4f4f4;
+    --text-primary: #000000;
+    --text-secondary: #555555;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --nav-text: black;
+}
+
+.dark-theme {
+    /* Best Dark Theme Colors: Midnight & Slate */
+    --bg-main: #0b0b2a;         /* Deep Navy */
+    --bg-secondary: #161b33;    /* Lighter Navy for cards */
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;  /* Soft grey for descriptions */
+    --card-shadow: rgba(0, 0, 0, 0.5);
+    --nav-text: white;
+}
+
+/* Now, apply these variables to your existing classes */
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    transition: background 0.4s, color 0.4s; /* Smooth switch */
+}
+
+/* Update your Navbar links to use the variable */
+.nav-menu a, .nav-search i, #theme-icon {
+    color: var(--nav-text);
+}
+
+/* Update your Cards to use the variables */
+.card, .box1, .box2 {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary);
+    box-shadow: 0 4px 8px var(--card-shadow) !important;
+}
+
+.card p, .box1 .date, .box1 p {
+    color: var(--text-secondary) !important;
+}
+
+.details {
+    background-color: var(--bg-main);
 }
